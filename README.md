@@ -1,2 +1,10 @@
-# algos
-A collection of all algorithms that I have worked on and their respective solutions.
+## CodeWars
+![CodeWars widget](https://www.codewars.com/users/jrj-sys/badges/large)
+
+## JavaScript
+
+## Python
+
+## Java
+
+
