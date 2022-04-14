@@ -1,0 +1,26 @@
+Big O Notation
+
+Arrays
+
+ArrayLists
+
+Stacks
+
+Queues
+
+LinkedLists
+
+Doubly-LinkedLists
+
+Dictionaries
+
+Hash-Tables
+
+Trees
+
+Tries
+
+Heaps
+
+Graphs
+
