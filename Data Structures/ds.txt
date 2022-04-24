@@ -1,26 +1,63 @@
+[My quick notes on data structures]
+
 Big O Notation
+
+=> Describes the time complexity of an algorithm. O(1), O(log n), and O(n) are bread and butter. 
 
 Arrays
 
+=> Arrays in programming are fixed size and fixed typed element storages. 
+
 ArrayLists
+
+=> ArrayLists in programming are similar to arrays, except their size can be changed or mutated after declaration. T
+=> They take in objects as elements.
 
 Stacks
 
+=> Stacks are data structures that operate under the LIFO (Last In First Out) principle. 
+
 Queues
+
+=> Queues operate under the FIFO (First In First Out) principle.
 
 LinkedLists
 
+=> Linked lists are data structures that are linked together by pointers. 
+=> Linked lists consist of a node, data, and a pointer to the next node or to null if it's the last node.
+
 Doubly-LinkedLists
+
+=> Similar to linked lists (obviously), doubly-linkedlists allow you to traverse through data in any direction
+=> because their pointers point to the previous node as well as the next node.
 
 Dictionaries
 
+=> General-purpose data structures used to store groups of objects. They work similar to localStorage
+=> in that they have a key paired with a value. EACH KEY IS UNIQUE!
+
 Hash-Tables
+
+=> Dictionaries use hash functions to create hash tables (this is how I think about it). The data
+=> is stored in an associative manner. Each data value has its own unique index because the hash function
+=> stores it in a matter that can be specifically recovered. 
 
 Trees
 
+=> Non-linear data structure where data is organized hierarchically. 
+
 Tries
+
+=> Ordered tree where each node is labeled with a letter/character except the root node. it
+=> it used to generate words very quickly.
 
 Heaps
 
+=> Heaps are specialized trees with two types (min heaps and max heaps). In a min heap,
+=> each parent node is less than or equal to its children nodes. In a max heap, the inverse is
+=> true, where the parent node is greater than or equal to its children nodes.
+
 Graphs
+
+=> Graphs represent non-linear relationships between objects. They contain nodes connected by edges.
 
