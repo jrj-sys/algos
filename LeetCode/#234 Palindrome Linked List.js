@@ -10,6 +10,8 @@
  * @return {boolean}
  */
 
+//  Given the head of a singly linked list, return true if it is a palindrome.
+
  let isPalindrome = head => {
     let arr = [];
     while (head) {
