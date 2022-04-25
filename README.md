@@ -4,8 +4,8 @@
 
 
 ## CodeWars
-|[6 Kyu]()|[7 Kyu]()|[8 Kyu](https://github.com/jrj-sys/algos/tree/main/JS/8%20Kyu)|
-|---|---|---|
+|[8 Kyu](https://github.com/jrj-sys/algos/tree/main/CodeWars/8%20Kyu)|
+|---|
 
 
 
