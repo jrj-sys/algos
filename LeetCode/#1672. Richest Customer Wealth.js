@@ -15,5 +15,5 @@
             result.push(accounts[i].reduce((p, c) => p + c));
     }    
     result.sort((a, b) => b - a)
-    return result.slice(0, 1);
+    return result[0];
 };
