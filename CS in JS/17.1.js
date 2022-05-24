@@ -45,3 +45,52 @@ function answer() {
 
 console.log("Good Morning");
 answer();
+
+// 1. `main()` is pushed onto the call stack 
+// 2. `sayHello` is saved in global memory
+// 3. the TOE skips to the line that invokes `sayHello()`and pushes it onto the stack (=> executes and creates content)
+// 4. the TOE evaluates the `setTimeout()` function and "activates" it (it's not on the stack)
+// 5. after the timer counts down one second the callback function, the console.log, is pushed onto the callback queue
+// 6. the TOE has already progressed to the next thread, the declaration of `sayGoodbye()` to memory in the execution context 
+// 7. the console.log is pushed onto the call stack and then pops it off
+// 8. `sayGoodbye()` is invoked and pushed onto the call stack
+// 9. the TOE moves to the `sayGoodbye` function and the console.log is executed
+// 10. `sayGoodbye()` is popped off of the call stack and the TOE is returned to the `sayHello()` function
+// 11. `sayHello()` also ends because there is no more lines of code
+// 12. `setTimeout()` resolves and the callback is added to the queue 
+// 13. the cb function encounters the event loop which adds it to the stack where it is executed 
+// 14. the TOE executes the last console.log('Hello world')
+// 15. the cb function is popped off of the call stack 
+
+function sayHello() {
+  setTimeout( () => console.log("Hello world"), 1000);
+  function sayGoodbye() {
+    console.log("See ya");
+  }
+
+  console.log("Good Morning");
+  sayGoodbye();
+}
+
+sayHello();
+
+// 'foo' => 'baz' => 'bar'
+// 1. `main()` is pushed onto the call stack
+// 2. foo is allocated to global memory
+// 3. the TOE invokes `foo()` in the last line of code and pushes it on the call stack 
+// 4. `setTimeout` is activated (with a timer of 0) so the function is immediately resolved and pushed onto the QUEUE
+// 5. the event loop first checks the call stack to make sure there are no more tasks to run
+// 6. the event loop will see the two console.logs 'foo' and 'baz', they are pushed onto the call stack and popped off
+// 7. after the stack is idle, the event loop allows the callback function to push from the queue to the stack, then 
+// logs the third string 'bar' 
+
+function foo() {
+  setTimeout( () => {
+    console.log("bar");
+  }, 0);
+
+  console.log("foo");
+  console.log("baz");
+}
+
+foo();
