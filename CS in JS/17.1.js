@@ -9,7 +9,6 @@
 // 9. the TOE reaches the last line to return `sum` (`addTwo` is popped off of the stack)
 // 10. `output` is updated in the global memory to have a value of 5 
 
-
 const num = 3;
 function addTwo(int) {
   const sum = int + 2;
@@ -17,7 +16,6 @@ function addTwo(int) {
 }
 
 const output = addTwo(num);
-
 
 // console.log('Good morning' => 'Hello world' => 'I like bananas' => 'Are you listening?')
 // 1. `main()` is added to the stack
@@ -30,7 +28,6 @@ const output = addTwo(num);
 // 8. the TOE enters the function definition of `response()` which puts the console.log on the stack 
 // 9. `return;` pops the `response()` function off the call stack and returns to `answer()`
 // 10. the TOE reaches the end of `answer()` which results in `main()` popping off of the stack
-
 
 function answer() {
   console.log("Hello world");

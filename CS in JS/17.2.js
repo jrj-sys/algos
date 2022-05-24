@@ -3,7 +3,6 @@
 // creates privacy 
 // this is a self-containing counter
 
-
 function counter() {
   let count = 0;
   return function() {
@@ -25,7 +24,6 @@ class Tiger {
 
 const simba = new Tiger();
 simba.sound(); // => "roar"
-
 
 // created a factory function `tiger`
 // contains a variable, `noise`, and returns an object literal that has the method `sound`
